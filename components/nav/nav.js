@@ -19,7 +19,7 @@ const Nav = () => {
     <NavContainer>
         <div>
             <h3>BJARNE VERDONCK</h3>
-            <h4>Fullstack Webdeveloper</h4>
+            <h4>Fullstack Webdeveloper<span>.</span></h4>
         </div>
         <div>
             <ul>

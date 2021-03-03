@@ -30,8 +30,8 @@ const ToggleButton = styled.button`
         outline: none;
     }
 
-    :hover{
-        transform: rotate(360deg);
+    :active{
+        transform: rotate(-360deg);
     }
 
     @media only screen and (max-width: 1230px){
