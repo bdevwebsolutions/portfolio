@@ -256,7 +256,7 @@ const NC = styled.nav`
         padding-bottom: 5px;
 
         @keyframes IntialLoadFirst{
-            from { width: 50%;
+            from { width: 30%;
             }
             to{
                 width: 0%;
@@ -273,7 +273,7 @@ const NC = styled.nav`
             left: 0px;
             animation-name: IntialLoadFirst;
             animation-duration: 1s;
-            animation-timing-function: ease-out;
+            animation-timing-function: cubic-bezier(100,90,80,0);
         }
 
         @media only screen and (max-width: 570px){
