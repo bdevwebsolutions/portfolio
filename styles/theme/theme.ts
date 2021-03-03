@@ -11,5 +11,5 @@ export const lightMode = {
     back: "#F7F7F7",
     highlight: "#682AE9",
     fade: "#0E1212",
-    backGrid: "rgba(0,0,0,0.2)"
+    backGrid: "rgba(0,0,0,0.1)"
 }
