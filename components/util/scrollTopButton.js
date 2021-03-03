@@ -29,8 +29,8 @@ const ScrollTopButton = () => {
 const Button = styled.button`
 
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    right: 15px;
+    bottom: 15px;
     color: ${props => props.theme.highlight};
     background-color: rgba(0,0,0,0);
     border: none;
