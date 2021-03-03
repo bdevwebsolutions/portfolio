@@ -18,7 +18,7 @@ const Nav = () => {
     return (
     <NavContainer>
         <div>
-            <h2>BJARNE VERDONCK</h2>
+            <h3>BJARNE VERDONCK</h3>
             <h4>Fullstack Webdeveloper</h4>
         </div>
         <div>

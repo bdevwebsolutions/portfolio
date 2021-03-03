@@ -126,9 +126,19 @@ const BC = styled.div`
         font-weight: 500;
     }
 
+    @keyframes SpanLoad {
+        from{
+            width: 100%;
+        }
+        to {
+            width: 0%;
+        }
+    }
     span {
         color: ${props => props.theme.highlight};
         font-weight: bold;
+
+ 
     }
 
     //Component
@@ -164,6 +174,15 @@ export const GlobalGrid = () => {
 }
 
 const GG = styled.div`
+
+    @keyframes Load {
+        from{
+            height: 0%;
+        }
+        to{
+            height: 100%;
+        }
+    }
     width: 100%;
     height: 100%;
     position: fixed;
@@ -178,11 +197,16 @@ const GG = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
+    animation-name: Load;
+    animation-duration: 3s;
+
     div{
         overflow: hidden;
         box-sizing: border-box;
         border-right: 1px dashed ${props => props.theme.backGrid};
     }
+
+
 
 
     @media only screen and (max-width: 1200px){
@@ -230,6 +254,33 @@ const NC = styled.nav`
         margin-bottom: 10px;
         border-bottom: dashed 1px ${props => props.theme.backGrid} !important;
         padding-bottom: 5px;
+
+        @keyframes IntialLoadFirst{
+            from { width: 50%;
+            }
+            to{
+                width: 0%;
+            }
+        }
+
+        ::after{
+            content:"";
+            position: absolute;
+            width: 0%;
+            height: 90px;
+            background-color: ${props => props.theme.highlight};
+            top: 0px;
+            left: 0px;
+            animation-name: IntialLoadFirst;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        @media only screen and (max-width: 570px){
+            ::after{
+                animation-name: none;
+            }
+        }
     }
 
     ul{
@@ -253,7 +304,6 @@ const NC = styled.nav`
             font-size: 16px;
             color: ${props => props.theme.back};
             letter-spacing: 1px;
-
         }
 
 
